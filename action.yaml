@@ -1,6 +1,9 @@
 name: Backstop Action
 description: This action will archive the test when there is some failure in the backstop test. Also, you can download the result.
-
+author: Ankit Raj
+branding:
+  icon: 'activity'
+  color: 'Blue'
 on:
   push:
   schedule: # 03:00 JST == 18:00 UTC
