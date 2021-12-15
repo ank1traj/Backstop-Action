@@ -25,6 +25,8 @@ jobs:
         run: backstop reference
       - name: run backstop test
         run: backstop test
+      - name: create a folder
+        run: mkdir backstop_data
       - name: Archive HTML Report on failure
         if: failure()
         uses: actions/upload-artifact@v1
