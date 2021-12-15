@@ -1,7 +1,12 @@
 name: Backstop Action
+description: This action will archive the test when there is some failure in the backstop test. Also, you can download the result.
 
 on:
   push:
+  schedule: # 03:00 JST == 18:00 UTC
+  - cron: "0 18 * * *"
+  
+  workflow_dispatch:
     branches:
     - master
     
