@@ -6,7 +6,7 @@ branding:
   color: 'Blue'
 on:
   push:
-  schedule: # 03:00 IST == 18:00 UTC
+  schedule: # 23:30 IST == 18:00 UTC
   - cron: "0 18 * * *"
   
   workflow_dispatch:
