@@ -1,4 +1,4 @@
-name: Backstop Action
+name: Run BackstopJS test cases # Name of the action
 description: This action will archive the test when there is some failure in the backstop test. Also, you can download the result.
 author: Ankit Raj
 branding:
@@ -21,9 +21,9 @@ jobs:
       - uses: actions/checkout@master
       - name: install backstopjs
         run: npm install --force -g backstopjs
-      - name: run backstop reference
+      - name: Create reference screenshot from source site
         run: backstop reference
-      - name: run backstop test
+      - name: Run the test(It will take the screenshot of the given site and will test against reference screenshot)
         run: backstop test
       - name: create a folder
         run: mkdir backstop_data
